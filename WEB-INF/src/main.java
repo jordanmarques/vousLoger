@@ -7,26 +7,13 @@ import java.util.List;
  */
 public class main {
 
-    public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, SQLException {
-
-        try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
-        String urlBdd = "jdbc:mysql://localhost:8889/ProjetJ2E";
+    public static void main(String[] args) throws Exception {
 
         List<Appartement> appartementList = null;
-        try {
-            appartementList = getAppartements(urlBdd);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
+        BDDHelper bddHelper = new BDDHelper();
+        appartementList = bddHelper.loadAllAppartements();
+
 
         System.out.println("<html>");
 
@@ -55,29 +42,5 @@ public class main {
         System.out.println("</table>");
         System.out.println("</body>");
         System.out.println("</html>");
-    }
-
-    private static List<Appartement> getAppartements(String urlBdd) throws SQLException {
-        Connection conBdd = DriverManager.getConnection(urlBdd, "root", "root");
-
-
-        List<Appartement> appartementList = new ArrayList<>();
-        String appartementsRequete = "SELECT * from APPARTEMENTS";
-        Statement statement = conBdd.createStatement();
-
-        ResultSet appartementsResultats = statement.executeQuery(appartementsRequete);
-
-
-        while (appartementsResultats.next()) {
-            int numero = appartementsResultats.getInt("Numero");
-            String typeAppat = appartementsResultats.getString("TypeAppat");
-            String adresse = appartementsResultats.getString("Adresse");
-            Float montantVente = appartementsResultats.getFloat("MontantVente");
-            Float vendu = appartementsResultats.getFloat("Vendu");
-            String loginProp = appartementsResultats.getString("LoginProp");
-
-            appartementList.add(new Appartement(numero, typeAppat, adresse, vendu, montantVente, loginProp));
-        }
-        return appartementList;
     }
 }

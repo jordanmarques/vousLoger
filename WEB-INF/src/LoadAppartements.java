@@ -19,14 +19,11 @@ public class LoadAppartements extends HttpServlet {
 
 		BDDHelper bddHelper = new BDDHelper();
 		List<Appartement> appartementList = new ArrayList<>();
-
 		try {
 			appartementList = bddHelper.loadAllAppartements();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
-
 		out.println("<html>");
     	
     	out.println("<head>");

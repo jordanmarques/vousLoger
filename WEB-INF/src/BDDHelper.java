@@ -28,7 +28,7 @@ public class BDDHelper {
             Float vendu = appartementsResultats.getFloat("Vendu");
             String loginProp = appartementsResultats.getString("LoginProp");
 
-            appartementList.add(new Appartement(numero, typeAppat, adresse, montantVente, vendu, loginProp));
+            appartementList.add(new Appartement(numero, typeAppat, adresse, vendu, montantVente, loginProp));
         }
 
         return appartementList;
