@@ -1,10 +1,9 @@
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,26 +12,20 @@ public class LoadAppartements extends HttpServlet {
     /**
 	 * 
 	 */
-	private List<Appartement> appartementList;
 	private static final long serialVersionUID = 1L;
 
-	protected void doGet (HttpServletRequest request,HttpServletResponse response) throws IOException, ServletException {
+	protected void doGet (HttpServletRequest request,HttpServletResponse response) throws IOException {
 		PrintWriter out = response.getWriter();
+
 		BDDHelper bddHelper = new BDDHelper();
+		List<Appartement> appartementList = new ArrayList<>();
+
 		try {
 			appartementList = bddHelper.loadAllAppartements();
-			appartementList = new ArrayList();
-			Appartement appartement = new Appartement(2, "studio", "rue olala", 3.2F, 3.2F, "jmarques");
-			appartementList.add(appartement);
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			e.printStackTrace();
-		} catch (InstantiationException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
 
 		out.println("<html>");
     	
@@ -51,6 +44,8 @@ public class LoadAppartements extends HttpServlet {
 		out.println("<th>Montant Vente</th>");
 		out.println("</tr>");
 		out.println("<tr>");
+
+
 		for(Appartement appart : appartementList){
 			out.println("<td>"+appart.getTypeAppat()+"</td>");
 			out.println("<td>"+appart.getAdresse()+"</td>");
@@ -61,4 +56,5 @@ public class LoadAppartements extends HttpServlet {
 		out.println("</body>");
 		out.println("</html>");
     }
+
 }

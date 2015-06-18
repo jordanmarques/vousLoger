@@ -6,20 +6,14 @@ import java.util.List;
  * Created by jordanmarques on 18/06/15.
  */
 public class BDDHelper {
-    private String urlBdd;
-    private Connection conBdd;
 
     public BDDHelper() {
     }
 
-    private void initBDD() throws ClassNotFoundException, IllegalAccessException, InstantiationException, SQLException {
+    public List<Appartement> loadAllAppartements() throws Exception {
         Class.forName("com.mysql.jdbc.Driver").newInstance();
-        this.urlBdd = "jdbc:mysql://localhost:8889/ProjetJ2E";
-        this.conBdd = DriverManager.getConnection(urlBdd, "root", "root");
-    }
-
-    public List<Appartement> loadAllAppartements() throws SQLException, IllegalAccessException, InstantiationException, ClassNotFoundException {
-        initBDD();
+        String urlBdd = "jdbc:mysql://localhost:8889/ProjetJ2E";
+        Connection conBdd = DriverManager.getConnection(urlBdd, "root", "root");
         List<Appartement> appartementList = new ArrayList<>();
         String appartementsRequete = "SELECT * from APPARTEMENTS";
         Statement statement = conBdd.createStatement();
