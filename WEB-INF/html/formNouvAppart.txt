@@ -1,0 +1,14 @@
+<html xmlns="http://www.w3.org/1999/html">
+    <header>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+        <title>VousLoger</title>
+		
+	    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	    <link href="../lib/css/style.css" rel="stylesheet">
+    </header>
+
+    <body>
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-9 column">
