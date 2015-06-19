@@ -3,28 +3,26 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
 
 public class LoadAppartements extends HttpServlet {
-    /**
-	 * 
-	 */
+
+    private BDDHelper bddHelper;
 	private static final long serialVersionUID = 1L;
 
-	protected void doGet (HttpServletRequest request,HttpServletResponse response) throws IOException {
+	public void init(){
+		this.bddHelper = new BDDHelper();
+	}
+
+	protected void doGet (HttpServletRequest request,HttpServletResponse response) throws IOException{
 		PrintWriter out = response.getWriter();
+		out.println("<html>");
 
 		BDDHelper bddHelper = new BDDHelper();
-		List<Appartement> appartementList = new ArrayList<>();
-		try {
-			appartementList = bddHelper.loadAllAppartements();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		out.println("<html>");
+		List<Appartement> appartementList = this.bddHelper.loadAllAppartements();
+
+
     	
     	out.println("<head>");
     	String title = "VousLoger";
@@ -48,6 +46,7 @@ public class LoadAppartements extends HttpServlet {
 			out.println("<td>"+appart.getAdresse()+"</td>");
 			out.println("<td>"+appart.getMontantVente()+"</td>");
 		}
+
 		out.println("</tr>");
 		out.println("</table>");
 		out.println("</body>");

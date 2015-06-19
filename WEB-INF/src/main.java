@@ -7,12 +7,11 @@ import java.util.List;
  */
 public class main {
 
-    public static void main(String[] args) throws Exception {
-
-        List<Appartement> appartementList = null;
+    public static void main(String[] args) {
 
         BDDHelper bddHelper = new BDDHelper();
-        appartementList = bddHelper.loadAllAppartements();
+        System.out.println("<span>"+bddHelper.toString()+"</span>");
+        List<Appartement> appartementList = bddHelper.loadAllAppartements();
 
 
         System.out.println("<html>");
