@@ -34,20 +34,20 @@ public class LoadAppartements extends HttpServlet {
 
 		out.println("<table>");
 		out.println("<tr>");
-		out.println("<th>Type d'appartement</th>");
-		out.println("<th>Adresse</th>");
-		out.println("<th>Montant Vente</th>");
+		out.println("<td>Type d'appartement</td>");
+		out.println("<td>Adresse</td>");
+		out.println("<td>Montant Vente</td>");
 		out.println("</tr>");
-		out.println("<tr>");
-
-
+		
 		for(Appartement appart : appartementList){
+			out.println("<tr>");
 			out.println("<td>"+appart.getTypeAppat()+"</td>");
 			out.println("<td>"+appart.getAdresse()+"</td>");
 			out.println("<td>"+appart.getMontantVente()+"</td>");
+			out.println("</tr>");
 		}
 
-		out.println("</tr>");
+
 		out.println("</table>");
 		out.println("</body>");
 		out.println("</html>");
