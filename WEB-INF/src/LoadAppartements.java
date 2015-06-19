@@ -38,7 +38,7 @@ public class LoadAppartements extends HttpServlet {
 		out.println("<td>Adresse</td>");
 		out.println("<td>Montant Vente</td>");
 		out.println("</tr>");
-		
+
 		for(Appartement appart : appartementList){
 			out.println("<tr>");
 			out.println("<td>"+appart.getTypeAppat()+"</td>");
