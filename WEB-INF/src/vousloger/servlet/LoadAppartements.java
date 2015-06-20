@@ -1,8 +1,7 @@
-package vousloger;
+package vousloger.servlet;
 
-
-import vousloger.BDDHelper;
-import vousloger.Appartement;
+import vousloger.helper.BDDHelper;
+import vousloger.pojo.Appartement;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -25,7 +24,7 @@ public class LoadAppartements extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
 
-		BDDHelper bddHelper = new BDDHelper();
+		this.bddHelper = new BDDHelper();
 		List<Appartement> appartementList = this.bddHelper.loadAllAppartements();
 
 

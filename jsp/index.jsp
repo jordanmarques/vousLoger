@@ -1,4 +1,4 @@
-<%@ page import="vousloger.BDDHelper" %>
+<%@ page import="vousloger.helper.BDDHelper" %>
 <%@ include file="header.jsp" %>
 <div>
 	<div class="panel panel-default" style="margin:1%">
