@@ -1,3 +1,5 @@
+package vousloger.pojo;
+
 import java.math.BigDecimal;
 
 /**

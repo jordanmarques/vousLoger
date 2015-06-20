@@ -1,3 +1,9 @@
+package vousloger.servlet;
+
+
+import vousloger.myhelper.BDDHelper;
+import vousloger.pojo.Appartement;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

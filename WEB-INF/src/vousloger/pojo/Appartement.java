@@ -1,3 +1,5 @@
+package vousloger.pojo;
+
 /**
  * Created by jordanmarques on 18/06/15.
  */
