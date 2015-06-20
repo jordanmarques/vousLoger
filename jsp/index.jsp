@@ -1,4 +1,4 @@
-<%@ page import="vousloger.myhelper.BDDHelper" %>
+<%@ page import="vousloger.BDDHelper" %>
 <%@ include file="header.jsp" %>
 <div>
 	<div class="panel panel-default" style="margin:1%">
@@ -14,6 +14,7 @@
 		</table>
 		<%
 			BDDHelper bddHelper = new BDDHelper();
+			out.print(bddHelper.toString());
 		%>
 	</div>
 </div>

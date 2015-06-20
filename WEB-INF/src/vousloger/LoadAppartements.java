@@ -1,8 +1,8 @@
-package vousloger.servlet;
+package vousloger;
 
 
-import vousloger.myhelper.BDDHelper;
-import vousloger.pojo.Appartement;
+import vousloger.BDDHelper;
+import vousloger.Appartement;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

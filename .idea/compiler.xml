@@ -3,7 +3,7 @@
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
     <excludeFromCompile>
-      <file url="file://$PROJECT_DIR$/WEB-INF/src/vousloger/myhelper/BDDHelper.java" />
+      <file url="file://$PROJECT_DIR$/WEB-INF/src/vousloger/BDDHelper.java" />
     </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>

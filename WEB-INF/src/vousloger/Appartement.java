@@ -1,4 +1,4 @@
-package vousloger.pojo;
+package vousloger;
 
 /**
  * Created by jordanmarques on 18/06/15.

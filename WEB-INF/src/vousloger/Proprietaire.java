@@ -1,4 +1,4 @@
-package vousloger.pojo;
+package vousloger;
 
 import java.math.BigDecimal;
 

@@ -1,6 +1,4 @@
-package vousloger.myhelper;
-
-import vousloger.pojo.Appartement;
+package vousloger;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -67,11 +65,9 @@ public class BDDHelper {
 
     @Override
     public String toString() {
-        return "vousloger.myhelper.BDDHelper{" +
+        return "vousloger.BDDHelper{" +
                 "conBdd=" + conBdd +
                 ", urlBdd='" + urlBdd + '\'' +
-                ", statement=" + statement +
-                ", appartementsResultats=" + appartementsResultats +
                 '}';
     }
 }
