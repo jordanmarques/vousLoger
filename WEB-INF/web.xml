@@ -20,6 +20,10 @@
         <servlet-name>loadT3</servlet-name>
         <jsp-file>/jsp/t3.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <jsp-file>/jsp/register.jsp</jsp-file>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>loadAppartements</servlet-name>
@@ -40,6 +44,10 @@
     <servlet-mapping>
         <servlet-name>loadT3</servlet-name>
         <url-pattern>/loadT3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/register</url-pattern>
     </servlet-mapping>
 
 </web-app>

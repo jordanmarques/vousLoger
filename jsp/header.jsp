@@ -31,9 +31,10 @@
                         <a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i> Se connecter<strong class="caret"></strong></a>
                         <div class="dropdown-menu" style="padding: 15px;">
                             <form>
-                                <input id="authenticationLogin" name="authentication-login" type="text" placeholder="Login" ng-model="authenticatingUser.login"/>
+                                <input id="authenticationLogin" name="authentication-login" type="text" placeholder="Login"/>
                                 <input id="authenticationPassword" name="authentication-password" type="password" placeholder="Mot de passe" />
-                                <button id="loginButton" class="btn btn-primary btn-block" >Connexion</button>
+                                <button id="loginButton" class="btn btn-xs btn-primary btn-block" style="background-color:rgb(223, 73, 55);border-color:rgb(223, 73, 55)">Connexion</button>
+                                <a href="register">Cr&eacuteer un compte</a>
                             </form>
                         </div>
                     </li>
@@ -45,7 +46,7 @@
                         <div class="dropdown-menu" style="padding: 15px;">
                             <form>
                             <div class="col-md-4 text-center">
-                                <button id="logoutButton" class="btn btn-primary"><i class="icon-off"></i>Mon Compte</button>
+                                <button id="logoutButton" class="btn btn-xs btn-primary" style="background-color:rgb(223, 73, 55);border-color:rgb(223, 73, 55)"><i class="icon-off"></i>Mon Compte</button>
                             </div>
                             </form>
                         </div>
