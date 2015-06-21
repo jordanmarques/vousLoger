@@ -27,7 +27,29 @@
                             <li><a href="loadT3">T3</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Se connecter</a></li>
+                    <li class="dropdown" ng-hide="user">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i> Se connecter<strong class="caret"></strong></a>
+                        <div class="dropdown-menu" style="padding: 15px;">
+                            <form>
+                                <input id="authenticationLogin" name="authentication-login" type="text" placeholder="Login" ng-model="authenticatingUser.login"/>
+                                <input id="authenticationPassword" name="authentication-password" type="password" placeholder="Mot de passe" />
+                                <button id="loginButton" class="btn btn-primary btn-block" >Connexion</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="dropdown" ng-show="user">
+                        <a id="unconnectButton" class="dropdown-toggle" href="#" data-toggle="dropdown" ng-cloak>
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <span>user name</span><strong class="caret"></strong>
+                        </a>
+                        <div class="dropdown-menu" style="padding: 15px;">
+                            <form>
+                            <div class="col-md-4 text-center">
+                                <button id="logoutButton" class="btn btn-primary"><i class="icon-off"></i>Mon Compte</button>
+                            </div>
+                            </form>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
