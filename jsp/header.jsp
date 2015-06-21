@@ -54,15 +54,23 @@
                                 <span><% out.print(session.getAttribute("name")); %></span><strong class="caret"></strong>
                                 </a>
                                 <div class="dropdown-menu" style="padding: 15px;">
-                                    <form>
                                     <div>
                                         <center>
-                                        <button id="logoutButton" class="btn btn-xs btn-primary"
-                                        style="background-color:rgb(223, 73, 55);border-color:rgb(223, 73, 55)">
-                                        <i class="icon-off"></i>Mon Compte</button>
+                                        <form>
+                                            <button id="logoutButton" class="btn btn-xs btn-primary"
+                                                style="background-color:rgb(223, 73, 55);border-color:rgb(223, 73, 55)">
+                                                <i class="icon-off"></i>Mon Compte
+                                            </button>
+                                        </form>
+                                        </br>
+                                        <form action="deconnexion" method="get">
+                                            <button href="deconnexion" id="logoutButton" class="btn btn-xs btn-primary"
+                                                style="background-color:rgb(223, 73, 55);border-color:rgb(223, 73, 55)">
+                                                <i class="icon-off"></i>D&eacuteconnexion
+                                            </button>
+                                        </form>
                                         </center>
                                     </div>
-                                    </form>
                                 </div>
                             </li>
                         <% } %>

@@ -32,6 +32,10 @@
         <servlet-name>checkUser</servlet-name>
         <servlet-class>vousloger.servlet.CheckUser</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>deconnexion</servlet-name>
+        <servlet-class>vousloger.servlet.Deconnexion</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>loadAppartements</servlet-name>
@@ -64,6 +68,10 @@
     <servlet-mapping>
         <servlet-name>checkUser</servlet-name>
         <url-pattern>/checkUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deconnexion</servlet-name>
+        <url-pattern>/deconnexion</url-pattern>
     </servlet-mapping>
 
 </web-app>
