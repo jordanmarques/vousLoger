@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be0c327d-81c3-431e-bdc7-52d296680b85" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/Register.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/classes/vousloger/helper/BDDHelper.class" afterPath="$PROJECT_DIR$/WEB-INF/classes/vousloger/helper/BDDHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/src/vousloger/helper/BDDHelper.java" afterPath="$PROJECT_DIR$/WEB-INF/src/vousloger/helper/BDDHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsp/header.jsp" afterPath="$PROJECT_DIR$/jsp/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsp/register.jsp" afterPath="$PROJECT_DIR$/jsp/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/Register.java" afterPath="$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/Register.java" />
     </list>
     <ignored path="vousLoger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-              <caret line="6" column="111" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="111" />
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -77,21 +71,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jsp/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
-              <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.16693164" vertical-offset="0" max-vertical-offset="1005">
+              <caret line="7" column="119" selection-start-line="7" selection-start-column="119" selection-end-line="7" selection-end-column="119" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Register.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/Register.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59618443" vertical-offset="0" max-vertical-offset="629">
-              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,11 +165,11 @@
         <option value="$PROJECT_DIR$/jsp/t1.jsp" />
         <option value="$PROJECT_DIR$/jsp/t2.jsp" />
         <option value="$PROJECT_DIR$/jsp/t3.jsp" />
-        <option value="$PROJECT_DIR$/jsp/header.jsp" />
         <option value="$PROJECT_DIR$/WEB-INF/src/vousloger/helper/BDDHelper.java" />
         <option value="$PROJECT_DIR$/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/jsp/register.jsp" />
         <option value="$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/Register.java" />
+        <option value="$PROJECT_DIR$/jsp/header.jsp" />
       </list>
     </option>
   </component>
@@ -1210,26 +1204,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="6" column="111" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="990">
           <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
-          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1252,11 +1230,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59618443" vertical-offset="0" max-vertical-offset="629">
-          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsp/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16693164" vertical-offset="0" max-vertical-offset="1005">
+          <caret line="7" column="119" selection-start-line="7" selection-start-column="119" selection-end-line="7" selection-end-column="119" />
+          <folding />
         </state>
       </provider>
     </entry>

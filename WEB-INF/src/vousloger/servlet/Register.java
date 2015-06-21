@@ -21,8 +21,12 @@ public class Register extends HttpServlet {
         String login = request.getParameter("register-login");
         String mdp = request.getParameter("register-password");
 
-        this.bddHelper = new BDDHelper();
-        bddHelper.register(name, login, mdp);
-        response.sendRedirect("loadAppartements");
+        if(!(name.equals("") || login.equals("") || mdp.equals(""))) {
+            this.bddHelper = new BDDHelper();
+            bddHelper.register(name, login, mdp);
+            response.sendRedirect("loadAppartements");
+        }else{
+            out.print("<h1>Error on registration</h1");
+        }
     }
 }
