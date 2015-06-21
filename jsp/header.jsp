@@ -33,8 +33,9 @@
                             <form>
                                 <input id="authenticationLogin" name="authentication-login" type="text" placeholder="Login"/>
                                 <input id="authenticationPassword" name="authentication-password" type="password" placeholder="Mot de passe" />
-                                <button id="loginButton" class="btn btn-xs btn-primary btn-block" style="background-color:rgb(223, 73, 55);border-color:rgb(223, 73, 55)">Connexion</button>
-                                <a href="register">Cr&eacuteer un compte</a>
+                                <button id="loginButton" class="btn btn-xs btn-primary btn-block"
+                                style="background-color:rgb(223, 73, 55);border-color:rgb(223, 73, 55)">Connexion</button>
+                                <center><a href="register">Cr&eacuteer un compte</a></center>
                             </form>
                         </div>
                     </li>
@@ -45,8 +46,12 @@
                         </a>
                         <div class="dropdown-menu" style="padding: 15px;">
                             <form>
-                            <div class="col-md-4 text-center">
-                                <button id="logoutButton" class="btn btn-xs btn-primary" style="background-color:rgb(223, 73, 55);border-color:rgb(223, 73, 55)"><i class="icon-off"></i>Mon Compte</button>
+                            <div>
+                                <center>
+                                <button id="logoutButton" class="btn btn-xs btn-primary"
+                                style="background-color:rgb(223, 73, 55);border-color:rgb(223, 73, 55)">
+                                <i class="icon-off"></i>Mon Compte</button>
+                                </center>
                             </div>
                             </form>
                         </div>

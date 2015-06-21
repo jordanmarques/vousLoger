@@ -11,6 +11,7 @@ import java.util.List;
  */
 public class BDDHelper {
     private Statement statement;
+    private PreparedStatement preparedStatement;
     private ResultSet appartementsResultats;
 
 
@@ -170,6 +171,19 @@ public class BDDHelper {
         }
 
         return appartementList;
+    }
+
+    public void register(String nom, String login, String mdp){
+
+        try {
+            preparedStatement = Singleton.getInstance().prepareStatement("INSERT INTO PROPRIETAIRES(Nom, Login, Mdp) VALUES(?,?,?)");
+            preparedStatement.setString(1, nom);
+            preparedStatement.setString(2,login);
+            preparedStatement.setString(3,mdp);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 }

@@ -24,6 +24,10 @@
         <servlet-name>register</servlet-name>
         <jsp-file>/jsp/register.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <servlet-name>registerInBdd</servlet-name>
+        <servlet-class>vousloger.servlet.Register</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>loadAppartements</servlet-name>
@@ -48,6 +52,10 @@
     <servlet-mapping>
         <servlet-name>register</servlet-name>
         <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registerInBdd</servlet-name>
+        <url-pattern>/registerInBdd</url-pattern>
     </servlet-mapping>
 
 </web-app>
