@@ -79,4 +79,97 @@ public class BDDHelper {
         return appartementList;
     }
 
+    public List<Appartement> loadAllT1() {
+
+        List<Appartement> appartementList = new ArrayList<>();
+
+        String appartementsRequete = "SELECT * from APPARTEMENTS WHERE Vendu=0 AND TypeAppat='T1'";
+        try {
+            statement = Singleton.getInstance().createStatement();
+            appartementsResultats = statement.executeQuery(appartementsRequete);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            while (appartementsResultats.next()) {
+
+                int numero = appartementsResultats.getInt("Numero");
+                String typeAppat = appartementsResultats.getString("TypeAppat");
+                String adresse = appartementsResultats.getString("Adresse");
+                Float montantVente = appartementsResultats.getFloat("MontantVente");
+                Float vendu = appartementsResultats.getFloat("Vendu");
+                String loginProp = appartementsResultats.getString("LoginProp");
+
+                appartementList.add(new Appartement(numero, typeAppat, adresse, vendu, montantVente, loginProp));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return appartementList;
+    }
+
+    public List<Appartement> loadAllT2() {
+
+        List<Appartement> appartementList = new ArrayList<>();
+
+        String appartementsRequete = "SELECT * from APPARTEMENTS WHERE Vendu=0 AND TypeAppat='T2'";
+        try {
+            statement = Singleton.getInstance().createStatement();
+            appartementsResultats = statement.executeQuery(appartementsRequete);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            while (appartementsResultats.next()) {
+
+                int numero = appartementsResultats.getInt("Numero");
+                String typeAppat = appartementsResultats.getString("TypeAppat");
+                String adresse = appartementsResultats.getString("Adresse");
+                Float montantVente = appartementsResultats.getFloat("MontantVente");
+                Float vendu = appartementsResultats.getFloat("Vendu");
+                String loginProp = appartementsResultats.getString("LoginProp");
+
+                appartementList.add(new Appartement(numero, typeAppat, adresse, vendu, montantVente, loginProp));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return appartementList;
+    }
+
+    public List<Appartement> loadAllT3() {
+
+        List<Appartement> appartementList = new ArrayList<>();
+
+        String appartementsRequete = "SELECT * from APPARTEMENTS WHERE Vendu=0 AND TypeAppat='T3'";
+        try {
+            statement = Singleton.getInstance().createStatement();
+            appartementsResultats = statement.executeQuery(appartementsRequete);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            while (appartementsResultats.next()) {
+
+                int numero = appartementsResultats.getInt("Numero");
+                String typeAppat = appartementsResultats.getString("TypeAppat");
+                String adresse = appartementsResultats.getString("Adresse");
+                Float montantVente = appartementsResultats.getFloat("MontantVente");
+                Float vendu = appartementsResultats.getFloat("Vendu");
+                String loginProp = appartementsResultats.getString("LoginProp");
+
+                appartementList.add(new Appartement(numero, typeAppat, adresse, vendu, montantVente, loginProp));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return appartementList;
+    }
+
 }

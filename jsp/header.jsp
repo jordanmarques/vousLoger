@@ -22,9 +22,9 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-search"></i> Rechercher <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="loadStudio">Studio</a></li>
-                            <li><a href="#">T1</a></li>
-                            <li><a href="#">T2</a></li>
-                            <li><a href="#">T3</a></li>
+                            <li><a href="loadT1">T1</a></li>
+                            <li><a href="loadT2">T2</a></li>
+                            <li><a href="loadT3">T3</a></li>
                         </ul>
                     </li>
                     <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Se connecter</a></li>

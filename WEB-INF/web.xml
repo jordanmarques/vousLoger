@@ -1,4 +1,5 @@
 <web-app>
+
     <servlet>
         <servlet-name>loadAppartements</servlet-name>
         <jsp-file>/jsp/index.jsp</jsp-file>
@@ -6,6 +7,18 @@
     <servlet>
         <servlet-name>loadStudio</servlet-name>
         <jsp-file>/jsp/studio.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>loadT1</servlet-name>
+        <jsp-file>/jsp/t1.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>loadT2</servlet-name>
+        <jsp-file>/jsp/t2.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>loadT3</servlet-name>
+        <jsp-file>/jsp/t3.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>
@@ -15,6 +28,18 @@
     <servlet-mapping>
         <servlet-name>loadStudio</servlet-name>
         <url-pattern>/loadStudio</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loadT1</servlet-name>
+        <url-pattern>/loadT1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loadT2</servlet-name>
+        <url-pattern>/loadT2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loadT3</servlet-name>
+        <url-pattern>/loadT3</url-pattern>
     </servlet-mapping>
 
 </web-app>
