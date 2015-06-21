@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be0c327d-81c3-431e-bdc7-52d296680b85" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/Register.java" afterPath="$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/Register.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/CheckUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/src/vousloger/helper/BDDHelper.java" afterPath="$PROJECT_DIR$/WEB-INF/src/vousloger/helper/BDDHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsp/header.jsp" afterPath="$PROJECT_DIR$/jsp/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vousLoger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +39,8 @@
       <file leaf-file-name="BDDHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEB-INF/src/vousloger/helper/BDDHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-              <caret line="175" column="16" selection-start-line="175" selection-start-column="16" selection-end-line="175" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="811" max-vertical-offset="1455">
+              <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#BDDHelper#0;class#BDDHelper#0" expanded="false" />
@@ -44,8 +48,18 @@
                 <element signature="method#loadAllStudio#0;class#BDDHelper#0" expanded="false" />
                 <element signature="method#loadAllT1#0;class#BDDHelper#0" expanded="false" />
                 <element signature="method#loadAllT2#0;class#BDDHelper#0" expanded="false" />
-                <element signature="method#loadAllT3#0;class#BDDHelper#0" expanded="false" />
-                <element signature="method#register#0;class#BDDHelper#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/CheckUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -64,8 +78,8 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="990">
-              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="481" max-vertical-offset="1110">
+              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -74,52 +88,8 @@
       <file leaf-file-name="header.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jsp/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16693164" vertical-offset="0" max-vertical-offset="1005">
-              <caret line="7" column="119" selection-start-line="7" selection-start-column="119" selection-end-line="7" selection-end-column="119" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/Register.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadAppartements.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/LoadAppartements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="121" max-vertical-offset="975">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="855">
-              <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
+            <state vertical-scroll-proportion="0.618442" vertical-offset="406" max-vertical-offset="1155">
+              <caret line="53" column="81" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -130,6 +100,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
               <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/Register.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -160,15 +150,16 @@
         <option value="$PROJECT_DIR$/WEB-INF/src/vousloger/LoadAppartements.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/vousloger/BDDHelper.java" />
         <option value="$PROJECT_DIR$/WEB-INF/src/vousloger/pojo/Appartement.java" />
-        <option value="$PROJECT_DIR$/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/jsp/studio.jsp" />
         <option value="$PROJECT_DIR$/jsp/t1.jsp" />
         <option value="$PROJECT_DIR$/jsp/t2.jsp" />
         <option value="$PROJECT_DIR$/jsp/t3.jsp" />
-        <option value="$PROJECT_DIR$/WEB-INF/src/vousloger/helper/BDDHelper.java" />
-        <option value="$PROJECT_DIR$/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/jsp/register.jsp" />
         <option value="$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/Register.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/vousloger/helper/BDDHelper.java" />
+        <option value="$PROJECT_DIR$/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/CheckUser.java" />
         <option value="$PROJECT_DIR$/jsp/header.jsp" />
       </list>
     </option>
@@ -496,6 +487,9 @@
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="vousloger.servlet" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jsp" />
       <recent name="$PROJECT_DIR$/WEB-INF/lib/java" />
@@ -793,21 +787,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jsp/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="135">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="585">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="285">
@@ -827,8 +806,6 @@
             <element signature="method#loadAllStudio#0;class#BDDHelper#0" expanded="false" />
             <element signature="method#loadAllT1#0;class#BDDHelper#0" expanded="false" />
             <element signature="method#loadAllT2#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#loadAllT3#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#register#0;class#BDDHelper#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -920,8 +897,6 @@
             <element signature="method#loadAllStudio#0;class#BDDHelper#0" expanded="false" />
             <element signature="method#loadAllT1#0;class#BDDHelper#0" expanded="false" />
             <element signature="method#loadAllT2#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#loadAllT3#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#register#0;class#BDDHelper#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -993,8 +968,6 @@
             <element signature="method#loadAllStudio#0;class#BDDHelper#0" expanded="false" />
             <element signature="method#loadAllT1#0;class#BDDHelper#0" expanded="false" />
             <element signature="method#loadAllT2#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#loadAllT3#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#register#0;class#BDDHelper#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1038,8 +1011,6 @@
             <element signature="method#loadAllStudio#0;class#BDDHelper#0" expanded="false" />
             <element signature="method#loadAllT1#0;class#BDDHelper#0" expanded="false" />
             <element signature="method#loadAllT2#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#loadAllT3#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#register#0;class#BDDHelper#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1062,8 +1033,6 @@
             <element signature="method#loadAllStudio#0;class#BDDHelper#0" expanded="false" />
             <element signature="method#loadAllT1#0;class#BDDHelper#0" expanded="false" />
             <element signature="method#loadAllT2#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#loadAllT3#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#register#0;class#BDDHelper#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1161,39 +1130,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="855">
-          <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54689986" vertical-offset="676" max-vertical-offset="19500">
-          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/src/vousloger/helper/BDDHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="175" column="16" selection-start-line="175" selection-start-column="16" selection-end-line="175" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#BDDHelper#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#loadAllAppartements#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#loadAllStudio#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#loadAllT1#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#loadAllT2#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#loadAllT3#0;class#BDDHelper#0" expanded="false" />
-            <element signature="method#register#0;class#BDDHelper#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/LoadAppartements.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="121" max-vertical-offset="975">
@@ -1204,10 +1140,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/web.xml">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="990">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.33227345" vertical-offset="2026" max-vertical-offset="64065">
+          <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8330684" vertical-offset="496" max-vertical-offset="19500">
+          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/vousloger/helper/BDDHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="811" max-vertical-offset="1455">
+          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#BDDHelper#0;class#BDDHelper#0" expanded="false" />
+            <element signature="method#loadAllAppartements#0;class#BDDHelper#0" expanded="false" />
+            <element signature="method#loadAllStudio#0;class#BDDHelper#0" expanded="false" />
+            <element signature="method#loadAllT1#0;class#BDDHelper#0" expanded="false" />
+            <element signature="method#loadAllT2#0;class#BDDHelper#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12396694" vertical-offset="0" max-vertical-offset="855">
+          <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
           <folding />
         </state>
       </provider>
@@ -1216,6 +1183,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="481" max-vertical-offset="1110">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1231,25 +1214,25 @@
     <entry file="file://$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/Register.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEB-INF/src/vousloger/servlet/CheckUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsp/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16693164" vertical-offset="0" max-vertical-offset="1005">
-          <caret line="7" column="119" selection-start-line="7" selection-start-column="119" selection-end-line="7" selection-end-column="119" />
+        <state vertical-scroll-proportion="0.618442" vertical-offset="406" max-vertical-offset="1155">
+          <caret line="53" column="81" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
           <folding />
         </state>
       </provider>

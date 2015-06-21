@@ -28,6 +28,10 @@
         <servlet-name>registerInBdd</servlet-name>
         <servlet-class>vousloger.servlet.Register</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>checkUser</servlet-name>
+        <servlet-class>vousloger.servlet.CheckUser</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>loadAppartements</servlet-name>
@@ -56,6 +60,10 @@
     <servlet-mapping>
         <servlet-name>registerInBdd</servlet-name>
         <url-pattern>/registerInBdd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>checkUser</servlet-name>
+        <url-pattern>/checkUser</url-pattern>
     </servlet-mapping>
 
 </web-app>

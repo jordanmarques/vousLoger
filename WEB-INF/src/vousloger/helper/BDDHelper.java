@@ -186,4 +186,23 @@ public class BDDHelper {
         }
     }
 
+    public String checkUser(String login, String mdp){
+
+        try {
+            preparedStatement = Singleton.getInstance().prepareStatement("SELECT Nom FROM PROPRIETAIRES WHERE Login=? AND Mdp=?");
+            preparedStatement.setString(1,login);
+            preparedStatement.setString(2,mdp);
+            ResultSet userResult = preparedStatement.executeQuery();
+
+            if (userResult.next()){
+                return userResult.getString("Nom");
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
 }
