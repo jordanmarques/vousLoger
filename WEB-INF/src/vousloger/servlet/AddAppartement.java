@@ -26,6 +26,8 @@ public class AddAppartement extends HttpServlet {
             this.bddHelper = new BDDHelper();
             HttpSession session = request.getSession(true);
             bddHelper.addAppartement(type, adress, price, (String) session.getAttribute("login") );
+            session = request.getSession(true);
+            session.setAttribute("newAppart", "1");
             response.sendRedirect("manage");
         }else{
             out.print("<h1>Error on Appartement Creation</h1");

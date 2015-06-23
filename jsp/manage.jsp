@@ -3,12 +3,29 @@
 <%@ page import="java.util.List" %>
 <%@ include file="header.jsp" %>
 
+
+<%
+BDDHelper bddHelper = new BDDHelper();
+if(session.getAttribute("newAppart") == "1"){
+%>
+	<div class="alert alert-warning alert-dismissible" role="alert">
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	  <strong>F&eacutelicitation!</strong> Vous venez de cr&eacuteer l'appartement n&#176
+	  <%
+	  	out.print(bddHelper.getLastIdAppartByUser((String) session.getAttribute("login")));
+	  %>
+	</div>
+
+<%
+	session.setAttribute("newAppart", "0");
+}
+%>
+
 <div class="panel panel-default col-md-5 pull-left" style="margin-left:50px;padding:0;">
-	<div class="panel-heading" style="background-color:rgb(223, 73, 55);color:white">Appartements en vente <button class="btn btn-xs btn-default pull-right" data-toggle="modal" data-target="#appartModal"><i class="glyphicon glyphicon-plus" style="color:#777;"></i></button></div>
+	<div class="panel-heading" style="background-color:rgb(223, 73, 55);color:white">Appartements en vente <button class="btn btn-xs btn-default pull-right" data-toggle="modal" data-target="#appartModal"><i class="glyphicon glyphicon-plus" style="color:#777;"></i> Ajouter un appartement</button></div>
 	<table class="table table-striped">
 		<th>Numero</th><th>Type</th><th>Adresse</th><th>Montant</th><th>Action</th></tr>
 			<%
-				BDDHelper bddHelper = new BDDHelper();
 				List<Appartement> appartementOnSaleList = bddHelper.loadAppartementsOnSaleByUser((String) session.getAttribute("login"));
 				for(Appartement appart : appartementOnSaleList){
 					out.println("<tr>");
