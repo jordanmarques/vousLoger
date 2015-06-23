@@ -4,14 +4,14 @@ package vousloger.pojo;
  * Created by jordanmarques on 18/06/15.
  */
 public class Appartement {
-    private int numero;
+    private String numero;
     private String typeAppat;
     private String adresse;
     private Float montantVente;
     private Float vendu;
     private String loginProp;
 
-    public Appartement(int numero, String typeAppat, String adresse, Float vendu, Float montantVente, String loginProp) {
+    public Appartement(String numero, String typeAppat, String adresse, Float vendu, Float montantVente, String loginProp) {
         this.numero = numero;
         this.typeAppat = typeAppat;
         this.adresse = adresse;
@@ -60,11 +60,11 @@ public class Appartement {
         this.loginProp = loginProp;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 }

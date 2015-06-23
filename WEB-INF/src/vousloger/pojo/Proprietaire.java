@@ -11,6 +11,9 @@ public class Proprietaire {
     private String login;
     private String mdp;
 
+    public Proprietaire() {
+    }
+
     public Proprietaire(String nom, String login, String mdp) {
         this.nom = nom;
         this.login = login;

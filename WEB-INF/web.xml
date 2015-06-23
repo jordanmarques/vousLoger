@@ -40,6 +40,18 @@
         <servlet-name>deconnexion</servlet-name>
         <servlet-class>vousloger.servlet.Deconnexion</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>saleAnAppartement</servlet-name>
+        <servlet-class>vousloger.servlet.SaleAnAppartement</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>removeAnAppartement</servlet-name>
+        <servlet-class>vousloger.servlet.RemoveAnAppartement</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>test</servlet-name>
+        <servlet-class>vousloger.servlet.Test</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>loadAppartements</servlet-name>
@@ -80,6 +92,18 @@
     <servlet-mapping>
         <servlet-name>deconnexion</servlet-name>
         <url-pattern>/deconnexion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>test</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>saleAnAppartement</servlet-name>
+        <url-pattern>/saleAnAppartement</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>removeAnAppartement</servlet-name>
+        <url-pattern>/removeAnAppartement</url-pattern>
     </servlet-mapping>
 
 </web-app>

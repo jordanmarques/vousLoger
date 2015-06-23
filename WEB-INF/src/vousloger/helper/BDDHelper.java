@@ -33,7 +33,7 @@ public class BDDHelper {
         try {
             while (appartementsResultats.next()) {
 
-                int numero = appartementsResultats.getInt("Numero");
+                String numero = appartementsResultats.getString("Numero");
                 String typeAppat = appartementsResultats.getString("TypeAppat");
                 String adresse = appartementsResultats.getString("Adresse");
                 Float montantVente = appartementsResultats.getFloat("MontantVente");
@@ -64,7 +64,7 @@ public class BDDHelper {
         try {
             while (appartementsResultats.next()) {
 
-                int numero = appartementsResultats.getInt("Numero");
+                String numero = appartementsResultats.getString("Numero");
                 String typeAppat = appartementsResultats.getString("TypeAppat");
                 String adresse = appartementsResultats.getString("Adresse");
                 Float montantVente = appartementsResultats.getFloat("MontantVente");
@@ -95,7 +95,7 @@ public class BDDHelper {
         try {
             while (appartementsResultats.next()) {
 
-                int numero = appartementsResultats.getInt("Numero");
+                String numero = appartementsResultats.getString("Numero");
                 String typeAppat = appartementsResultats.getString("TypeAppat");
                 String adresse = appartementsResultats.getString("Adresse");
                 Float montantVente = appartementsResultats.getFloat("MontantVente");
@@ -126,7 +126,7 @@ public class BDDHelper {
         try {
             while (appartementsResultats.next()) {
 
-                int numero = appartementsResultats.getInt("Numero");
+                String numero = appartementsResultats.getString("Numero");
                 String typeAppat = appartementsResultats.getString("TypeAppat");
                 String adresse = appartementsResultats.getString("Adresse");
                 Float montantVente = appartementsResultats.getFloat("MontantVente");
@@ -157,7 +157,7 @@ public class BDDHelper {
         try {
             while (appartementsResultats.next()) {
 
-                int numero = appartementsResultats.getInt("Numero");
+                String numero = appartementsResultats.getString("Numero");
                 String typeAppat = appartementsResultats.getString("TypeAppat");
                 String adresse = appartementsResultats.getString("Adresse");
                 Float montantVente = appartementsResultats.getFloat("MontantVente");
@@ -205,4 +205,89 @@ public class BDDHelper {
         return null;
     }
 
+    public List<Appartement> loadAppartementsOnSaleByUser(String user){
+
+        List<Appartement> appartementList = new ArrayList<>();
+
+        try {
+            preparedStatement = Singleton.getInstance().prepareStatement("SELECT * from APPARTEMENTS WHERE Vendu=0 AND LoginProp=?");
+            preparedStatement.setString(1, user);
+            appartementsResultats = preparedStatement.executeQuery();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            while (appartementsResultats.next()) {
+
+                String numero = appartementsResultats.getString("Numero");
+                String typeAppat = appartementsResultats.getString("TypeAppat");
+                String adresse = appartementsResultats.getString("Adresse");
+                Float montantVente = appartementsResultats.getFloat("MontantVente");
+                Float vendu = appartementsResultats.getFloat("Vendu");
+                String loginProp = appartementsResultats.getString("LoginProp");
+
+                appartementList.add(new Appartement(numero, typeAppat, adresse, vendu, montantVente, loginProp));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return appartementList;
+    }
+
+    public List<Appartement> loadAppartementsSoldByUser(String user){
+
+        List<Appartement> appartementList = new ArrayList<>();
+
+        try {
+            preparedStatement = Singleton.getInstance().prepareStatement("SELECT * from APPARTEMENTS WHERE Vendu=1 AND LoginProp=?");
+            preparedStatement.setString(1, user);
+            appartementsResultats = preparedStatement.executeQuery();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            while (appartementsResultats.next()) {
+
+                String numero = appartementsResultats.getString("Numero");
+                String typeAppat = appartementsResultats.getString("TypeAppat");
+                String adresse = appartementsResultats.getString("Adresse");
+                Float montantVente = appartementsResultats.getFloat("MontantVente");
+                Float vendu = appartementsResultats.getFloat("Vendu");
+                String loginProp = appartementsResultats.getString("LoginProp");
+
+                appartementList.add(new Appartement(numero, typeAppat, adresse, vendu, montantVente, loginProp));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return appartementList;
+    }
+
+    public void saleAnAppartement(String id){
+
+        try {
+            preparedStatement = Singleton.getInstance().prepareStatement("UPDATE APPARTEMENTS SET Vendu=1 WHERE Numero=?");
+            preparedStatement.setString(1, id);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void removeAnAppartement(String id){
+
+        try {
+            preparedStatement = Singleton.getInstance().prepareStatement("DELETE FROM APPARTEMENTS WHERE Numero=?");
+            preparedStatement.setString(1, id);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
 }
