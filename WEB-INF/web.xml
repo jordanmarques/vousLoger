@@ -52,7 +52,10 @@
         <servlet-name>test</servlet-name>
         <servlet-class>vousloger.servlet.Test</servlet-class>
     </servlet>
-
+    <servlet>
+        <servlet-name>addAppartement</servlet-name>
+        <servlet-class>vousloger.servlet.AddAppartement</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loadAppartements</servlet-name>
         <url-pattern>/loadAppartements</url-pattern>
@@ -104,6 +107,10 @@
     <servlet-mapping>
         <servlet-name>removeAnAppartement</servlet-name>
         <url-pattern>/removeAnAppartement</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addAppartement</servlet-name>
+        <url-pattern>/addAppartement</url-pattern>
     </servlet-mapping>
 
 </web-app>

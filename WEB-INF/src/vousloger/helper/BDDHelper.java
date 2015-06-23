@@ -2,6 +2,7 @@ package vousloger.helper;
 
 import vousloger.pojo.Appartement;
 
+import javax.servlet.http.HttpSession;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -290,4 +291,17 @@ public class BDDHelper {
         }
 
     }
+
+    public void addAppartement(String type, String adress, String price, String user) {
+        try {
+            preparedStatement = Singleton.getInstance().prepareStatement("INSERT INTO APPARTEMENTS(TypeAppat, Adresse, MontantVente, Vendu, LoginProp) VALUES(?,?,?,?,?)");
+            preparedStatement.setString(1, type);
+            preparedStatement.setString(2,adress);
+            preparedStatement.setString(3,price);
+            preparedStatement.setString(4,"0");
+            preparedStatement.setString(5,user);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }    }
 }

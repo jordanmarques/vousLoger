@@ -44,11 +44,12 @@
 <div class="panel panel-default col-md-5 pull-right" style="margin-right:50px;padding:0;">
 	<div class="panel-heading" style="background-color:rgb(223, 73, 55);color:white">Appartements vendu</div>
 	<table class="table table-striped">
-		<th>Type</th><th>Adresse</th><th>Montant</th></tr>
+		<th>Numero</th><th>Type</th><th>Adresse</th><th>Montant</th></tr>
 			<%
 				List<Appartement> appartementSoldList = bddHelper.loadAppartementsSoldByUser((String) session.getAttribute("login"));
 				for(Appartement appart : appartementSoldList){
 					out.println("<tr>");
+					out.println("<td>"+appart.getNumero()+"</td>");
 					out.println("<td>"+appart.getTypeAppat()+"</td>");
 					out.println("<td>"+appart.getAdresse()+"</td>");
 					out.println("<td>"+appart.getMontantVente()+" "+"&#8364"+"</td>");
@@ -69,7 +70,7 @@
       </div>
 
       <div class="modal-body">
-        <form>
+        <form action="addAppartement" method="get">
 			<select class="btn btn-default" name="appart-type">
 				<optgroup label="Type">
 					<option value="STUDIO">Studio</option>
@@ -82,14 +83,13 @@
 		  <input name="appart-adress" type="text" placeholder="Adresse"/>
 		  </br>
 		  <input name="appart-price" type="text" placeholder="Montant" />
-        </form>
       </div>
 
-      <div class="modal-footer">
+      <div class="modal-footer" >
         <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-        <button type="button" class="btn btn-primary" style="background-color:rgb(223, 73, 55);border-color:rgb(223, 73, 55);">Enregistrer</button>
+        <button type="submit" class="btn btn-primary" style="background-color:rgb(223, 73, 55);border-color:rgb(223, 73, 55);">Enregistrer</button>
       </div>
-
+	</form>
     </div>
   </div>
 </div>
