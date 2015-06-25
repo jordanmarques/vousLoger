@@ -16,17 +16,13 @@ public class Register extends HttpServlet {
     private BDDHelper bddHelper;
 
     protected void doGet(HttpServletRequest request,HttpServletResponse response) throws IOException {
-        PrintWriter out = response.getWriter();
         String name = request.getParameter("register-name");
         String login = request.getParameter("register-login");
         String mdp = request.getParameter("register-password");
 
-        if(!(name.equals("") || login.equals("") || mdp.equals(""))) {
-            this.bddHelper = new BDDHelper();
-            bddHelper.register(name, login, mdp);
-            response.sendRedirect("loadAppartements");
-        }else{
-            out.print("<h1>Error on registration</h1");
-        }
+        this.bddHelper = new BDDHelper();
+        bddHelper.register(name, login, mdp);
+        response.sendRedirect("loadAppartements");
+
     }
 }

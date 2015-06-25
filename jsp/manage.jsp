@@ -97,9 +97,9 @@ if(session.getAttribute("newAppart") == "1"){
 				</optgroup>
 		  </select>
 		  </br>
-		  <input name="appart-adress" type="text" placeholder="Adresse"/>
+		  <input name="appart-adress" type="text" placeholder="Adresse" required/>
 		  </br>
-		  <input name="appart-price" type="text" placeholder="Montant" />
+		  <input name="appart-price" type="number" placeholder="Montant" required/>
       </div>
 
       <div class="modal-footer" >

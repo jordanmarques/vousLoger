@@ -22,15 +22,17 @@
             </div>
             <div id="navbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-search"></i> Rechercher <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="loadStudio">Studio</a></li>
-                            <li><a href="loadT1">T1</a></li>
-                            <li><a href="loadT2">T2</a></li>
-                            <li><a href="loadT3">T3</a></li>
-                        </ul>
-                    </li>
+                    <% if(request.getRequestURI().equals("/vousLoger/loadAppartements") || request.getRequestURI().equals("/vousLoger/loadStudio") || request.getRequestURI().equals("/vousLoger/loadT1") || request.getRequestURI().equals("/vousLoger/loadT2") || request.getRequestURI().equals("/vousLoger/loadT3")){%>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-search"></i> Rechercher <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="loadStudio">Studio</a></li>
+                                <li><a href="loadT1">T1</a></li>
+                                <li><a href="loadT2">T2</a></li>
+                                <li><a href="loadT3">T3</a></li>
+                            </ul>
+                        </li>
+                    <%}%>
 
                     <%
                         if(session.getAttribute("name")== null || session.getAttribute("name")==""){
